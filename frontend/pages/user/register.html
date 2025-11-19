@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Registrierung</title>
+    <link rel="stylesheet" href="../../css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Mitarbeiter Registrierung</h1>
+      <button id="homeButton">Zur Startseite</button>
+    </header>
+
+    <main>
+      <form id="registerForm">
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email" required />
+
+        <label for="initialPassword">Initialpasswort:</label>
+        <input type="password" id="initialPassword" required />
+
+        <label for="newPassword">Neues Passwort:</label>
+        <input type="password" id="newPassword" required />
+
+        <button type="submit">Registrieren</button>
+      </form>
+      <!-- Erfolgs- oder Fehlermeldung -->
+      <div id="message"></div>
+      <!-- Login-Button, wird erst nach erfolgreicher Registrierung sichtbar -->
+      <div>
+        <button
+          id="loginButton"
+          style="display: none"
+          onclick="window.location.href='login.html'"
+        >
+          Zum Login
+        </button>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Kalikian</p>
+    </footer>
+
+    <script src="../../js/auth/user-auth.js"></script>
+    <script src="../../js/utils/utils.js"></script>
+  </body>
+</html>

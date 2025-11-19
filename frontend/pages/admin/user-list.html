@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mitarbeiterliste</title>
+    <link rel="stylesheet" href="../../css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Mitarbeiterliste</h1>
+      <button onclick="window.location.href='dashboard.html'">
+        Zurück zum Admin-Dashboard
+      </button>
+      <button id="backToManageUsers">Zurück zur Verwaltung</button>
+    </header>
+
+    <main>
+      <h2>Alle Mitarbeiter</h2>
+      <table id="userTable">
+        <thead>
+          <tr>
+            <th>✓</th>
+            <th>ID</th>
+            <th>Vorname</th>
+            <th>Nachname</th>
+            <th>Email</th>
+            <th>Rolle</th>
+            <th>Registriert</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Mitarbeiter-Daten werden hier per JavaScript eingefügt -->
+        </tbody>
+      </table>
+      <!-- Button zum Löschen der ausgewählten Benutzer -->
+      <button id="deleteUsersButton" style="margin: 30px">Ausgewählte Benutzer löschen</button>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Kalikian</p>
+    </footer>
+
+    <script src="../../js/pages/admin/user-list.js"></script>
+    <script src="../../js/utils/utils.js"></script>
+  </body>
+</html>

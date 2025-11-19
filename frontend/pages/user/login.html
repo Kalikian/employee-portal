@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mitarbeiter-Login</title>
+    <link rel="stylesheet" href="../../css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Mitarbeiterportal – Login</h1>
+      <button id="homeButton">Zur Startseite</button>
+    </header>
+
+    <main>
+      <form id="loginForm">
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="password">Passwort:</label>
+        <input type="password" id="password" name="password" required />
+
+        <button type="submit">Einloggen</button>
+      </form>
+      <div id="message"></div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Kalikian</p>
+    </footer>
+
+    <script src="../../js/auth/user-auth.js"></script>
+    <script src="../../js/utils/utils.js"></script>
+  </body>
+</html>

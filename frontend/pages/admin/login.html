@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="../../css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Admin Login</h1>
+      <button id="homeButton">Zur Startseite</button>
+    </header>
+
+    <main>
+      <form id="adminLoginForm">
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email" required />
+
+        <label for="password">Passwort:</label>
+        <input type="password" id="password" required />
+
+        <button type="submit">Login</button>
+      </form>
+      <div id="message"></div>
+    </main>
+    <footer>
+      <p>&copy; 2025 Kalikian</p>
+    </footer>
+
+    <script src="../../js/auth/admin-auth.js"></script>
+    <script src="../../js/utils/utils.js"></script>
+  </body>
+</html>

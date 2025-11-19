@@ -1,0 +1,14 @@
+version: "3"
+services:
+  backend:
+    build: .
+    container_name: mitarbeiterportal_backend
+    ports:
+      - "5000:3000" # Mappe Port 5000 (Host) auf 3000 (Container)
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - DB_PATH=/app/database/database.db
+    volumes:
+      - ./database:/app/database
+    restart: always

@@ -1,0 +1,6 @@
+node_modules
+database/database.db
+database/migrations
+.env
+.git
+.vscode

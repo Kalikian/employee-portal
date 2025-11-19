@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mitarbeiter verwalten</title>
+    <link rel="stylesheet" href="../../css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Mitarbeiterverwaltung</h1>
+      <button id="dashboardButton">Zum Admin-Dashboard</button>
+    </header>
+
+    <main>
+      <!-- Bereich: Mitarbeiter hinzufügen -->
+      <section>
+        <h2>Neuen Mitarbeiter hinzufügen</h2>
+        <form id="addUserForm">
+          <label for="firstName">Vorname:</label>
+          <input type="text" id="firstName" required />
+
+          <label for="lastName">Nachname:</label>
+          <input type="text" id="lastName" required />
+
+          <label for="email">E-Mail:</label>
+          <input type="email" id="email" required />
+
+          <button type="submit">Mitarbeiter hinzufügen</button>
+        </form>
+      </section>
+
+      <!-- Optische Trennung -->
+      <hr class="section-divider" />
+
+      <section id="manageUsersSection">
+        <h2>Mitarbeiter verwalten</h2>
+        <button onclick="window.location.href='user-list.html'">
+          Mitarbeiterliste anzeigen
+        </button>
+
+        <!-- Container für die Mitarbeiterliste -->
+        <div id="userListContainer">
+          <h3>Liste der Mitarbeiter</h3>
+          <ul id="userList"></ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Kalikian</p>
+    </footer>
+
+    <!-- JavaScript für die Funktionen -->
+    <script src="../../js/pages/admin/manage-users.js"></script>
+    <script src="../../js/utils/utils.js"></script>
+  </body>
+</html>
