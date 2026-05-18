@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const email = document.getElementById("email").value;
 
       try {
-        const response = await fetch("http://localhost:3000/api/admin/users", {
+        const response = await fetch("http://localhost:4000/api/admin/users", {
           method: "POST",
           headers: {
             Authorization: `Bearer ${token}`,

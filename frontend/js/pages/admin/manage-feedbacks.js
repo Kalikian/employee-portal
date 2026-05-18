@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const token = localStorage.getItem("adminToken");
 
   try {
-    const response = await fetch("http://localhost:3000/api/admin/feedback", {
+    const response = await fetch("http://localhost:4000/api/admin/feedback", {
       method: "GET",
       headers: {
         Authorization: `Bearer ${token}`,
